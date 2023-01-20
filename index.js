@@ -79,6 +79,8 @@ function playRound() {
 function checkGameWinner() {
   if (playerScore === maxScore || computerScore === maxScore) {
     winner = playerScore === maxScore ? "Player" : "Computer";
+  } else {
+    round++;
   }
 }
 
